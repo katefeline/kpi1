@@ -9,13 +9,261 @@
     <link rel=stylesheet href="./css/style.css">
 </head>
 <body>
-<header>Контрольна робота</header>
+
+<header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="EcoShop Logo" id="site-logo">
+            <h1 id="site-logo">EcoShop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" class="search-input" placeholder="Search products...">
+        </div>
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#products" class="dropdown-toggle">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#reusable-bags">Reusable Bags</a></li>
+                        <li><a href="#bamboo-utensils">Bamboo Utensils</a></li>
+                        <li><a href="#solar-chargers">Solar Chargers</a></li>
+                        <li><a href="#all-products">View All</a></li>
+                    </ul>
+                </li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 <main>
+    <section class="hero-section" id="home">
+        <div class="hero-banner">
+            <img src="./images/hero_banner.png" alt="Hero Banner" class="hero-image">
+            <div class="hero-content">
+                <h2>Welcome to EcoShop</h2>
+                <p>Discover sustainable products for a better tomorrow</p>
+                <a href="report.html" class="btn-shop">Watch our report</a>
+            </div>
+        </div>
+    </section>
 
+    <hr>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <article class="about-content">
+                <p>We are a dedicated team committed to providing eco-friendly products that make a difference. Our mission is to promote sustainability and environmental consciousness through quality products.</p>
+                <p>Founded in 2020, we've been serving customers worldwide with products that care for both people and the planet.</p>
+                <blockquote>
+                    <em>"Sustainability is not just a trend, it's our responsibility."</em>
+                </blockquote>
+            </article>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="products-section" id="products">
+        <div class="container">
+            <h3 class="section-title">Our Products</h3>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h4>Reusable Bags</h4>
+                    <span class="price">$15.99</span>
+                    <p>Durable and stylish bags for everyday use</p>
+                </div>
+                <div class="product-card">
+                    <h4>Bamboo Utensils</h4>
+                    <span class="price">$12.50</span>
+                    <p>Eco-friendly alternative to plastic cutlery</p>
+                </div>
+                <div class="product-card">
+                    <h4>Solar Chargers</h4>
+                    <span class="price">$45.00</span>
+                    <p>Charge your devices with clean energy</p>
+                </div>
+            </div>
+            <ul class="product-features">
+                <li>100% Sustainable Materials</li>
+                <li>Ethically Sourced</li>
+                <li>Carbon Neutral Shipping</li>
+                <li>1-Year Warranty</li>
+            </ul>
+            
+            <div class="product-comparison">
+                <h4 class="section-title">Product Comparison</h4>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Material</th>
+                            <th>Weight</th>
+                            <th>Lifespan</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reusable Bags</td>
+                            <td data-label="Material">Organic Cotton</td>
+                            <td data-label="Weight">120g</td>
+                            <td data-label="Lifespan">5+ years</td>
+                            <td data-label="Price">$15.99</td>
+                        </tr>
+                        <tr>
+                            <td>Bamboo Utensils</td>
+                            <td data-label="Material">Natural Bamboo</td>
+                            <td data-label="Weight">45g</td>
+                            <td data-label="Lifespan">3+ years</td>
+                            <td data-label="Price">$12.50</td>
+                        </tr>
+                        <tr>
+                            <td>Solar Chargers</td>
+                            <td data-label="Material">Recycled Plastic</td>
+                            <td data-label="Weight">280g</td>
+                            <td data-label="Lifespan">10+ years</td>
+                            <td data-label="Price">$45.00</td>
+                        </tr>
+                        <tr>
+                            <td>Stainless Steel Straws</td>
+                            <td data-label="Material">Stainless Steel</td>
+                            <td data-label="Weight">25g</td>
+                            <td data-label="Lifespan">Lifetime</td>
+                            <td data-label="Price">$8.99</td>
+                        </tr>
+                        <tr>
+                            <td>Beeswax Wraps</td>
+                            <td data-label="Material">Cotton & Beeswax</td>
+                            <td data-label="Weight">35g</td>
+                            <td data-label="Lifespan">1+ year</td>
+                            <td data-label="Price">$18.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="team-section" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <dl class="team-list">
+                <dt>Sarah Johnson</dt>
+                <dd>Founder & CEO - Visionary leader with 10 years experience in sustainable business</dd>
+                
+                <dt>Michael Chen</dt>
+                <dd>Head of Operations - Expert in supply chain management and logistics</dd>
+                
+                <dt>Emily Rodriguez</dt>
+                <dd>Product Designer - Creative mind behind our innovative eco-friendly designs</dd>
+            </dl>
+            <aside class="team-note">
+                <strong>Note:</strong> Our team is growing! Check our careers page for opportunities.
+            </aside>
+            
+            <div class="faq-section">
+                <h3 class="section-title">Frequently Asked Questions</h3>
+                <details class="faq-item">
+                    <summary>What makes your products eco-friendly?</summary>
+                    <p>All our products are made from sustainable materials, ethically sourced, and manufactured with minimal environmental impact. We prioritize recyclable and biodegradable materials.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you offer international shipping?</summary>
+                    <p>Yes! We ship to over 50 countries worldwide with carbon-neutral shipping options. Delivery times vary by location.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What is your return policy?</summary>
+                    <p>We offer a 30-day return policy for all unused products in original packaging. Returns are free and easy through our online portal.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 </main>
-<footer>
 
+<footer class="site-footer" id="contact">
+    <div class="container">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    <p><strong>Email:</strong> <a href="mailto:info@ecoshop.com">info@ecoshop.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p><strong>Address:</strong> 123 Green Street, Eco City, EC 12345</p>
+                </address>
+            </div>
+            <div class="contact-cta">
+                <h3>Get in Touch</h3>
+                <p>Have a question or feedback? We'd love to hear from you!</p>
+                <button class="btn-open-form" id="open-form-btn">Send us a Message</button>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>&copy; 2025 EcoShop. All rights reserved.</small>
+        </div>
+    </div>
 </footer>
+
+<!-- Contact Form Popup Modal -->
+<div class="modal-overlay" id="form-modal">
+    <div class="modal-content">
+        <button class="modal-close" id="close-modal" aria-label="Close modal">&times;</button>
+        <div class="contact-form-wrapper">
+            <h3>Send us a Message</h3>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a topic</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="product">Product Question</option>
+                        <option value="order">Order Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Your message here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Subscribe to our newsletter
+                    </label>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <script src="./js/script.js"></script>
 </body>
 </html>

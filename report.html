@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report - ІП-зп51 Шадріна КО</title>
+    <meta name="description" content="Домашня робота із дісципліни Проектування web-застосунків">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <link rel=stylesheet href="./css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="EcoShop Logo" id="site-logo">
+            <h1 id="site-logo">EcoShop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" class="search-input" placeholder="Search products...">
+        </div>
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="dropdown">
+                    <a href="index.html#products" class="dropdown-toggle">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#reusable-bags">Reusable Bags</a></li>
+                        <li><a href="#bamboo-utensils">Bamboo Utensils</a></li>
+                        <li><a href="#solar-chargers">Solar Chargers</a></li>
+                        <li><a href="#all-products">View All</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="about-section">
+        <div class="container">
+            <div class="report-heading">
+                <h1>Висновки до Лабораторної роботи №1</h1>
+            </div>
+            <div class="report-content">
+                <h2>Тема та мета власного WEB-застосунку</h2>
+                <h3>Розробка веб-сайту "EcoShop" — інтернет-магазину екологічно чистих товарів.</h3>
+                <p>Мета: Створення семантично розміченого, валідного HTML-документу для представлення e-commerce платформи, що популяризує еко-свідомість та дозволяє користувачам ознайомитись з асортиментом товарів для сталого розвитку.</p>
+            <hr>
+            <h2>Опис бізнес-логіки (Предметне середовище)</h2>
+            <p>WEB-застосунок "EcoShop" є вітриною інтернет-магазину.
+                Користувач потрапляє на головну сторінку, де бачить навігаційне меню, промо-банер та інформацію про бренд.
+                На сторінці представлено каталог товарів з цінами та коротким описом.
+                Реалізована функція порівняння характеристик товарів у вигляді таблиці.
+                Користувач може дізнатися про команду, переглянути відповіді на часті запитання (FAQ) та зв'язатися з адміністрацією через спливаючу форму зворотного зв'язку.</p>
+            <hr>
+            <h2>
+                Функціональні та нефункціональні вимоги
+            </h2>
+            <h3>
+                Функціональні вимоги:
+            </h3>
+            <ul>
+                <li>
+                    Відображення логотипу та назви магазину.
+                </li>
+                <li>
+                    Наявність навігаційного меню з посиланнями на розділи (Home, About, Products, Team, Contact).
+                </li>
+                <li>    
+                    Пошук товарів (поле вводу).
+                </li>
+                <li>
+                    Демонстрація списку товарів з картками (назва, ціна, опис).
+                </li>
+                <li>
+                    Табличне порівняння характеристик продуктів.
+                </li>
+                <li>
+                    Форма зворотного зв'язку у модальному вікні.
+                </li>
+            </ul>
+            <h3>
+                Нефункціональні вимоги:
+            </h3>
+            <ul>
+                <li>
+                    Використання семантичних тегів HTML5 (header, main, section, footer).
+                </li>
+                <li>
+                    Валідність коду (відповідність стандарту W3C).
+                </li>
+                <li>
+                    Доступність (використання атрибутів alt для зображень, aria-label).
+                </li>
+                <li>
+                    SEO-оптимізація (мета-теги description, title).
+                </li>
+            </ul>
+            <hr>
+            <h2>
+                Структура головної сторінки WEB-застосунка
+            </h2>
+            <p>Головна сторінка побудована за допомогою семантичної розмітки HTML5.</p>
+            
+            <ol>Основні блоки:
+                <li>
+                    <code>&lt;!DOCTYPE html&gt;</code> — оголошення типу документу.
+                </li>
+                <li>
+                    <code>&lt;html&gt;</code> — кореневий елемент з атрибутом мови lang="en"
+                </li>
+                <li>
+                    <code>&lt;head&gt;</code> — метадані, заголовок сторінки, підключення стилів.
+                </li>
+                <li>
+                    <code>&lt;body&gt;</code> — видима частина сторінки, що містить:
+                        <ul>
+                            <li>
+                                <code>&lt;header&gt;</code> — "шапка" сайту (лого, пошук, меню <code>&lt;nav&gt;</code>).
+                            </li>
+                            <li>
+                                <code>&lt;main&gt;</code> — основний контент, розділений на секції:
+                                    <ul>
+                                        <li>
+                                            <code>&lt;section id="home"&gt;</code> — Hero-банер.
+                                        </li>
+                                        <li>
+                                            <code>&lt;section id="about"&gt;</code> — Інформація про компанію (<code>&lt;article&gt;</code>).
+                                        </li>
+                                        <li>
+                                            <code>&lt;section id="products"&gt;</code> — Картки товарів та таблиця порівняння.
+                                        </li>
+                                        <li>
+                                            <code>&lt;section id="team"&gt;</code> — Інформація про команду (<code>&lt;dl&gt;</code>) та FAQ (<code>&lt;details&gt;</code>).
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li>
+                                <code>&lt;footer&gt;</code> — "підвал" сайту (контакти, посилання, копірайт).
+                            </li>
+
+                        </ul>
+                </li>
+            </ol>
+            <hr>
+            <h2>
+                Робота з таблицями
+            </h2>
+            <p>
+                <img src="./images/html_table.jpg" alt="Приклад таблиці" class="report-image">
+                <img src="./images/html_table_browser.jpg" alt="Приклад таблиці" class="report-image">
+            </p>
+            <h3>
+                Теги та атрибути для таблиць
+            </h3>
+            <ul> Для створення таблиць в HTML використовується тег <table></table>
+                <li>
+                    <code>&lt;thead&gt;</code>: Групує заголовки таблиці.
+                </li>
+                <li>
+                    <code>&lt;tbody&gt;</code>: Групує основний вміст (тіло) таблиці.
+                </li>
+                <li>
+                    <code>&lt;tfoot&gt;</code>: Групує підвал таблиці (підсумки, примітки).
+                </li>
+                <li>
+                    <code>&lt;tr&gt;</code>: Визначає рядок таблиці.
+                </li>
+                <li>
+                    <code>&lt;th&gt;</code>: Визначає заголовну клітинку таблиці.
+                </li>
+                <li>
+                    <code>&lt;td&gt;</code>: Визначає звичайну клітинку таблиці.
+                </li>
+            </ul>
+            <hr>
+            <h2>
+                Робота із зображеннями
+            </h2>
+            <img src="./images/html_image.jpg" alt="Приклад зображень" class="report-image">
+            <img src="./images/html_image_browser.jpg" alt="Приклад зображень у браузері" class="report-image">
+            <h3>
+                Теги та атрибути зображень
+            </h3>
+            <p>
+                Зображення додаються за допомогою одинарного тегу <code>&lt;img&gt;</code>.
+            </p>
+            <ul>
+                <li>
+                    <code>&lt;src&gt;</code> (source): Шлях до файлу зображення (обов'язковий). Може бути відносним (./images/logo.png) або абсолютним (URL).
+                </li>
+                <li>
+                    <code>&lt;alt&gt;</code> (alternative text): Альтернативний текст. Відображається, якщо картинка не завантажилась, і читається скрінрідерами для людей з вадами зору (важливо для SEO та доступності).
+                </li>
+                <li>
+                    <code>&lt;width&gt;</code> та <code>&lt;height&gt;</code>: Задають ширину та висоту зображення в пікселях (рекомендується для запобігання "стрибків" верстки при завантаженні).
+                </li>
+                <li>
+                    <code>&lt;loading="lazy"&gt;</code>: Дозволяє відкладене завантаження зображень (оптимізація швидкості).
+                </li>
+            </ul>
+            <hr>
+            <h2>
+                Робота зі списками
+            </h2>
+            <img src="./images/html_ul_li.jpg" alt="Приклад списків" class="report-image">
+            <img src="./images/html_ul_li_code.jpg" alt="Приклад списків у браузері" class="report-image">
+            <h3>
+                Теги та атрибути списків
+            </h3>
+            <ol>В HTML існує три основні види списків:
+                <li>
+                    Маркований список (<code>&lt;ul&gt;</code> - Unordered List): Елементи не мають порядку, позначаються маркерами (крапками). Елементи списку — <code>&lt;li&gt;</code>.
+                </li>
+                <li>
+                    Нумерований список (<code>&lt;ol&gt;</code> - Ordered List): Елементи мають порядок (1, 2, 3 або A, B, C). Атрибути: type (вид нумерації), start (початкове значення), reversed (зворотний порядок). Елементи — <code>&lt;li&gt;</code>.
+                </li>
+                <li>
+                    Список означень (<code>&lt;dl&gt;</code> - Description List): Використовується для термінів та їх описів.
+                    <code>&lt;dt&gt;</code> (Description Term): Термін або ім'я.
+                    <code>&lt;dd&gt;</code> (Description Details): Опис терміну.
+                </li>
+            </ol>
+            <hr>
+            <h2>
+                Висновки
+            </h2>
+            <p>
+                У ході виконання лабораторної роботи я розробила структуру головної сторінки WEB-застосунку "EcoShop" для продажу еко-товарів. 
+                Було використано семантичні теги HTML5, такі як header, nav, main, section, article, footer, що покращує доступність та SEO-оптимізацію сторінки.
+            </p>
+        
+        </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    <p><strong>Email:</strong> <a href="mailto:info@ecoshop.com">info@ecoshop.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p><strong>Address:</strong> 123 Green Street, Eco City, EC 12345</p>
+                </address>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>&copy; 2025 EcoShop. All rights reserved.</small>
+        </div>
+    </div>
+</footer>
+
+<!-- <script src="./js/script.js"></script> -->
+</body>
+</html>
